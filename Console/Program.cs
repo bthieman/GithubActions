@@ -83,9 +83,13 @@ namespace GithubActionsLab
 
         // Implement this method following a similar pattern as above
         public static double Power(string x, string y)
-        {
-            throw new NotImplementedException();
-        }
+     {
+     if (double.Parse(y) == 0)
+         {
+         return 1;
+         }
+     return Math.Pow(double.Parse(x), double.Parse(y));
+     }
     }
 
 
